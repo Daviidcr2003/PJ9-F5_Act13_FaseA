@@ -1,0 +1,15 @@
+services:
+  contenedor_app1:
+    image: imagen_app1  
+    build: .            
+    ports:
+      - "8000:80"       
+    volumes:
+      - ./app1/index.html:/var/www/html/index.html  
+    networks:
+      - app-network
+    restart: always
+
+networks:
+  app-network:
+    driver: bridge

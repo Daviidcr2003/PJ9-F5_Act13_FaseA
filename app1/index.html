@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuració Switch Cisco 2960</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h2>Configuració Inicial del Switch Cisco 2960</h2>
+    <form action="config.php" method="post">
+        <label>Hostname:</label>
+        <input type="text" name="hostname" required>
+
+        <label>Contrasenya mode privilegiat:</label>
+        <input type="password" name="enable_secret" required>
+
+        <label>Contrasenya Telnet:</label>
+        <input type="password" name="telnet_pass" required>
+
+        <label>Contrasenya Consola:</label>
+        <input type="password" name="console_pass" required>
+
+        <label>Banner:</label>
+        <input type="text" name="banner" required>
+
+        <label>Data i Hora (format YYYY-MM-DD HH:MM):</label>
+        <input type="datetime-local" name="datetime" required>
+
+        <label>IP VLAN 1:</label>
+        <input type="text" name="vlan_ip" required>
+
+        <label>Màscara VLAN 1:</label>
+        <input type="text" name="vlan_mask" required>
+
+        <button type="submit">Generar Configuració</button>
+    </form>
+</body>
+</html>
