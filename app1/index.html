@@ -1,3 +1,4 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="ca">
 <head>
@@ -32,7 +33,14 @@
 
         <label>Màscara VLAN 1:</label>
         <input type="text" name="vlan_mask" required>
+        
+        <label>Nom de VLAN 2:</label>
+        <input type="text" name="vlan2_name" required>
 
+        <label>Interfícies assignades a VLAN 2 (Inicial - Final):</label>
+        <input type="number" name="vlan2_start" min="1" max="24" required>
+        <input type="number" name="vlan2_end" min="1" max="24" required>
+        
         <button type="submit">Generar Configuració</button>
     </form>
 </body>

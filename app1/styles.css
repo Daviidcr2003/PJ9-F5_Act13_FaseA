@@ -46,6 +46,29 @@ input {
     font-size: 14px;
 }
 
+/* Contenidor de configuració generada */
+.config-container {
+    background-color: #1b263b;
+    border: 1px solid #415a77;
+    padding: 15px;
+    border-radius: 10px;
+    width: 80%;
+    margin: auto;
+    text-align: left;
+    box-shadow: 0px 0px 10px rgba(0, 255, 255, 0.3);
+}
+
+pre {
+    background-color: #0d1b2a;
+    padding: 10px;
+    border-radius: 5px;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+    color: #00aaff;
+}
+
 /* Botó */
 button {
     margin-top: 15px;
@@ -68,5 +91,8 @@ button:hover {
 @media (max-width: 768px) {
     form {
         width: 80%;
+    }
+    .config-container {
+        width: 95%;
     }
 }
